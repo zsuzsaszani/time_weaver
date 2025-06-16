@@ -1,0 +1,116 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: var(--font-inter), sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-space-grotesk), sans-serif;
+}
+
+@layer base {
+  :root {
+    --background: 258 100% 97%; /* Light Purple (#F2EFFF) */
+    --foreground: 258 20% 25%; /* Dark Desaturated Purple */
+
+    --card: 0 0% 100%; /* White */
+    --card-foreground: 258 20% 25%; /* Dark Desaturated Purple */
+
+    --popover: 0 0% 100%; /* White */
+    --popover-foreground: 258 20% 25%; /* Dark Desaturated Purple */
+
+    --primary: 258 92% 73%; /* Vibrant Purple (#A076F9) */
+    --primary-foreground: 0 0% 100%; /* White */
+
+    --secondary: 258 70% 93%; /* Lighter Purple */
+    --secondary-foreground: 258 30% 40%; /* Medium Purple */
+
+    --muted: 258 50% 95%; /* Very Light Purple/Gray */
+    --muted-foreground: 258 25% 55%; /* Medium-Light Purple/Gray */
+
+    --accent: 214 92% 73%; /* Blue (#76A5F9) */
+    --accent-foreground: 0 0% 100%; /* White */
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 258 40% 90%; /* Light Purple/Gray Border */
+    --input: 258 60% 96%; /* Very Light Purple/Gray Input BG */
+    --ring: 258 92% 73%; /* Primary color for rings */
+
+    --radius: 0.5rem;
+
+    --chart-1: 258 80% 65%;
+    --chart-2: 214 80% 65%;
+    --chart-3: 300 70% 60%;
+    --chart-4: 240 75% 70%;
+    --chart-5: 270 70% 65%;
+    
+    --sidebar-background: 258 60% 94%;
+    --sidebar-foreground: 258 20% 30%;
+    --sidebar-primary: 258 92% 73%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 214 92% 73%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 258 40% 88%;
+    --sidebar-ring: 258 92% 73%;
+  }
+
+  .dark {
+    --background: 258 20% 12%; /* Very Dark Purple */
+    --foreground: 258 80% 90%; /* Light Lavender */
+
+    --card: 258 20% 16%; /* Slightly Lighter Dark Purple */
+    --card-foreground: 258 80% 90%;
+
+    --popover: 258 20% 14%;
+    --popover-foreground: 258 80% 90%;
+
+    --primary: 258 85% 78%; /* Brighter Purple for Dark Mode */
+    --primary-foreground: 258 90% 15%; /* Very Dark Purple */
+
+    --secondary: 258 30% 30%; /* Muted Dark Purple */
+    --secondary-foreground: 258 70% 75%;
+
+    --muted: 258 25% 22%;
+    --muted-foreground: 258 50% 65%;
+
+    --accent: 214 85% 78%; /* Brighter Blue for Dark Mode */
+    --accent-foreground: 214 90% 15%;
+    
+    --destructive: 0 70% 50%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 258 25% 35%;
+    --input: 258 25% 28%;
+    --ring: 258 85% 78%;
+    
+    --chart-1: 258 70% 60%;
+    --chart-2: 214 70% 60%;
+    --chart-3: 300 60% 55%;
+    --chart-4: 240 65% 65%;
+    --chart-5: 270 60% 60%;
+
+    --sidebar-background: 258 20% 14%;
+    --sidebar-foreground: 258 80% 88%;
+    --sidebar-primary: 258 85% 78%;
+    --sidebar-primary-foreground: 258 90% 15%;
+    --sidebar-accent: 214 85% 78%;
+    --sidebar-accent-foreground: 214 90% 15%;
+    --sidebar-border: 258 25% 30%;
+    --sidebar-ring: 258 85% 78%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
